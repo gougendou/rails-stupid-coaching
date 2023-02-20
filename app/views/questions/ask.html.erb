@@ -1,10 +1,21 @@
-<h1>Oi oi saveloy</h1>
+<h1 class = "py-3">Stupid coaching</h1>
 
 <form action="/answer" method ="get" data-turbo="false">
-  <input type="text"
-  name="question"
-  placeholder = "type in your question"
-  value="<%= params[:question] %>"
-  >
-  <input type="submit" value="Ask!">
+  <div class="form-group">
+    <label class = "pb-3">Ask you coach anything: </label>
+    <div class="input-group mb-3">
+      <input name = "question" type="text" class="form-control" placeholder="Type your question here" aria-label="Recipient's username" aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <input type="submit" value="Ask!" class="btn btn-primary" >
+      </div>
+    </div>
+  </div>
 </form>
+
+
+<%# <div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+  </div>
+</div> %>

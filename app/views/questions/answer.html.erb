@@ -1,5 +1,13 @@
-<h1> <%= params[:question] %> </h1>
+<h1 class = "py-3">Stupid Coaching</h1>
 
-<h1> <%= @answer %> </h1>
+<div class = "alert alert-warning">
+  <p class="fw-bold"> <%= params[:question] %> </p>
+  <p class="fst-italic">-You </p>
+</div>
+
+<div class="alert alert-info">
+  <p class="fw-bold callout"> <%= @answer %> </p>
+  <p class="fst-italic">-Your coach</p>
+</div>
 
 <%= link_to "Back to questions", ask_path %>
