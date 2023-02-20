@@ -1,0 +1,10 @@
+<h1>Oi oi saveloy</h1>
+
+<form action="/answer" method ="get" data-turbo="false">
+  <input type="text"
+  name="question"
+  placeholder = "type in your question"
+  value="<%= params[:question] %>"
+  >
+  <input type="submit" value="Ask!">
+</form>
